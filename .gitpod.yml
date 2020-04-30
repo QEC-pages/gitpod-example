@@ -1,8 +1,9 @@
 tasks:
   - init: echo "Replace me with a build script for the project."
     command: cd sample && make test
-#image: weileizeng/itpp-full:gitpod
+
+
 image:
-#  file: Dockerfile
   file: .gitpod.Dockerfile
-#  file: Dockerfile-gitpod
+# one can also use a pre-build docker image to boost the loading (only for the first time), by replacing the above line by the following line
+#image: weileizeng/itpp-full:gitpod

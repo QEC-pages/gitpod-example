@@ -15,4 +15,5 @@ test:
 	./hello-eigen.out
 	./hello-itpp.out
 	./hello-openmp.out
+	echo "Finish testing for cpp, eigen, itpp, and openmp. to run it again, type 'make test'"
 

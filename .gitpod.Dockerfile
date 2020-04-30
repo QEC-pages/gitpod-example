@@ -1,10 +1,9 @@
-# FROM weileizeng/itpp-full:latest
-
 FROM gitpod/workspace-full
 
 
 RUN sudo apt-get update \
     && sudo apt-get install -y \
+    apt-utils \
     libblas-dev \
     liblapack-dev \
     libitpp-dev \
@@ -14,18 +13,8 @@ RUN sudo apt-get update \
 
 RUN sudo apt-get install -y emacs
 
-# COPY ./sample /root/sample
-# WORKDIR /root
-
-# RUN useradd -ms /bin/bash guest
-
 
 USER gitpod
-
-# COPY ./sample /home/gitpod/sample
-# WORKDIR /home/gitpod
-
-
 
 
 # Install custom tools, runtime, etc. using apt-get
